@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+    list-style: none;
+}
+
+.img{
+    justify-content: center;
+}
+.H1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10dvw; text-transform: capitalize;
+    color: #720e0e;
+    font-weight: bolder;
+    position: static;
+    top: 30%;
+    padding: 20px;
+}
+.H2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:center ;
+    font-size: 2dvw;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 3dvw; 
+    color: #6c1b1b; 
+    padding: 1dvw;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    z-index: 2;
+    background-color: #822323;
+    min-height: 80px;
+}
+
+.banner{
+    display: flex;
+    margin-top: -2.5%;
+    margin-bottom: -2%;
+    align-items: center ;
+}
+
+.logo{
+    font-size:20px;
+    color:#e8bc56;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color:#d87f3f;
+    display: block;
+    font-weight: bold;
+}
+
+.menu .navbar ul li a:hover {
+    color: #862222;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:991px) {
+
+.content {
+    min-height: 70px;
+}
+
+.menu {
+    top: 0;
+    padding: 20px;
+}
+
+.menu label {
+    display: initial;
+}
+
+.menu .navbar {
+    position: absolute;
+    top: 81%;
+    left: 0;
+    right: 0;
+    background-color: #be2121;
+    display: none;
+}
+    
+.menu .navbar ul li {
+    width: 100%;
+}
+    
+#menu:checked ~ .navbar {
+    display: initial;
+}
+}
+    
+.coopyrigth {
+    color: #ffffff;
+    margin-top: 2%;
+    padding: 1svw;
+    background-color:  #770f15
+}
+
+
+
+a {
+    text-align: center;
+    color:  #ba5257;
+    text-decoration: none;
+}
+
+footer {
+    background: #34414e;
+    text-align: center;
+    font-style: italic;
+    color: #ddd;
+    width: 150%;
+    text-align: 1px;
+    overflow: auto;
+}
